@@ -4,12 +4,12 @@ const Traveller = require("./Traveller");
 const Trips = require("./Trips");
 
 Traveller.hasMany(Trips, {
-  foreignKey: "traveler_id",
+  foreignKey: "traveller_id",
   onDelete: "CASCADE",
 });
 
 Trips.belongsTo(Traveller, {
-  foreignKey: "traveler_id",
+  foreignKey: "traveller_id",
 });
 
 Location.hasOne(Trips, {

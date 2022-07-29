@@ -5,18 +5,18 @@ class Traveller extends Model {}
 
 Traveller.init(
   {
-    traveler_id: {
+    traveller_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     name: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.STRING,
       allowNull: false,
     },
     email: {
-      type: DataTypes.VARCHAR(30),
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
