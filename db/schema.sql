@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS triplist_db;
+CREATE DATABASE triplist_db;
+
